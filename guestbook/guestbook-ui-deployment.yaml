@@ -25,9 +25,9 @@ spec:
       - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
         resources:
           requests:
-            memory: "8Mi"
+            memory: "10Mi"
           limits:
-            memory: "12Mi"
+            memory: "15Mi"
         name: guestbook-ui
         ports:
         - containerPort: 80
