@@ -7,7 +7,7 @@ metadata:
     app.komodor.com/tracked_files: |
       *.yaml
     app.komodor.com/guestbook: https://github.com/damuret/guestbook
-    app.komodor.com/guestbook.ref:  ea43007eca46e2c49a863a6b15844c19fcdb26f9
+    app.komodor.com/guestbook.ref:  5cd00287834d50a7deb251e68cf2880760026608
 spec:
   replicas: 2
   revisionHistoryLimit: 3
