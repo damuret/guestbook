@@ -7,9 +7,9 @@ metadata:
     app.komodor.com/tracked_files: |
       *.yaml
     app.komodor.com/guestbook: https://github.com/damuret/guestbook
-    app.komodor.com/guestbook.ref:  7348b0c812ff5605fb75ef96310678be7f059d87
+    app.komodor.com/guestbook.ref:  b7b617c4cc9880095792ea941961914c40489d08
 spec:
-  replicas: 1
+  replicas: 3
   revisionHistoryLimit: 3
   selector:
     matchLabels:
@@ -24,9 +24,9 @@ spec:
       - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
         resources:
           requests:
-            memory: "10Mi"
+            memory: "8Mi"
           limits:
-            memory: "15Mi"
+            memory: "12Mi"
         name: guestbook-ui
         ports:
         - containerPort: 80
